@@ -5,4 +5,6 @@ void SumVisitor::visitNode(Node* node) {
 	// member of the object.
 	
 	// WRITEME
+	sum += node->value;
+	node->visit_children(this);
 }
